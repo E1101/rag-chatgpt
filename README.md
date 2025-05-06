@@ -16,25 +16,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Dependencies
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+This project uses the following dependencies:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### Data Storage and Vector Operations
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **[@datastax/astra-db-ts](https://github.com/datastax/astra-db-ts)**: A TypeScript client for Astra DB, used to store and manipulate vector data for retrieval augmented generation (RAG) capabilities in the chatbot.
 
-## Learn More
+### LLM Integration
 
-To learn more about Next.js, take a look at the following resources:
+- **[langchain](https://js.langchain.com)**: A framework for developing applications powered by language models. It provides tools for integrating, chaining, and optimizing large language models (LLMs) in applications, enabling sophisticated document retrieval, reasoning, and response generation.
+- **[openai](https://github.com/openai/openai-node)**: Official OpenAI Node.js client library that provides convenient access to the OpenAI API for generating text, embeddings, and other AI capabilities used in the chatbot's natural language understanding and generation.
+- **[ai](https://github.com/vercel/ai)**: Vercel's AI SDK for building AI-powered user interfaces. It provides React and JavaScript utilities for streaming responses, chat UI components, and integrations with various AI models.
+- **[@ai-sdk/openai](https://github.com/vercel/ai/tree/main/packages/openai)**: Part of the AI SDK that provides specialized utilities for working with OpenAI models, offering enhanced integration features and optimizations specific to OpenAI's capabilities.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
