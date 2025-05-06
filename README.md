@@ -16,6 +16,23 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## About This Application
+
+This application is a Retrieval Augmented Generation (RAG) chatbot built with Next.js. It combines the power of large language models with a vector database to provide more accurate and contextual responses.
+
+### What is RAG?
+
+RAG (Retrieval Augmented Generation) is an AI architecture that enhances traditional language models by first retrieving relevant information from a knowledge base and then using that information to generate more accurate and contextually relevant responses. This approach helps overcome limitations of pre-trained models by providing them with up-to-date and domain-specific information.
+
+### Key Features
+
+- **Contextual Conversations**: The chatbot maintains context through conversations for more coherent interactions
+- **Document-based Knowledge**: Leverages information stored in Astra DB's vector database to answer questions
+- **Real-time Responses**: Streams AI-generated responses for a smooth user experience
+- **Customizable Knowledge Base**: Can be extended with additional documents and information sources
+
+The application leverages Next.js for the frontend and API routes, Astra DB for vector storage and retrieval, and integrates with OpenAI's language models through LangChain and Vercel's AI SDK.
+
 ## Dependencies
 
 This project uses the following dependencies:
